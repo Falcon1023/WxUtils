@@ -1,6 +1,6 @@
 package me.trierbo.wechat.common;
 
-import com.keessi.wechat.exception.WxException;
+import me.trierbo.wechat.exception.WxException;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;

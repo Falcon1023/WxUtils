@@ -1,7 +1,7 @@
 package me.trierbo.wechat.service;
 
-import com.keessi.wechat.config.WeChatConfig;
-import com.keessi.wechat.util.HttpUtil;
+import me.trierbo.wechat.config.WeChatConfig;
+import me.trierbo.wechat.util.HttpUtil;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
