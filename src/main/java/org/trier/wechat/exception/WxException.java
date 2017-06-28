@@ -1,4 +1,4 @@
-package me.trierbo.wechat.exception;
+package org.trier.wechat.exception;
 
 /**
  * 微信相关异常

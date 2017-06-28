@@ -1,4 +1,4 @@
-package me.trierbo.wechat.util;
+package org.trier.wechat.util;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

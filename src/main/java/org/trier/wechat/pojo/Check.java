@@ -1,4 +1,4 @@
-package me.trierbo.wechat.pojo;
+package org.trier.wechat.pojo;
 
 /**
  * 校验access_token结果

@@ -1,4 +1,4 @@
-package me.trierbo.wechat.service;
+package org.trier.wechat.service;
 
 /**
  * Created by trier on 2017/6/18.

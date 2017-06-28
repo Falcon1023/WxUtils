@@ -1,4 +1,4 @@
-package me.trierbo.wechat.util;
+package org.trier.wechat.util;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

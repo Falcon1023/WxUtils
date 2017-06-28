@@ -1,4 +1,4 @@
-package me.trierbo.wechat.pojo;
+package org.trier.wechat.pojo;
 
 /**
  * 用户微信基本信息

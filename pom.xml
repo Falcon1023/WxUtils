@@ -1,17 +1,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>me.trierbo</groupId>
+  <groupId>org.trier</groupId>
   <artifactId>WxUtils</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>WxUtils Maven Webapp</name>
+  <name>WxUtils</name>
   <url>http://maven.apache.org</url>
 
   <properties>
     <junit-version>4.11</junit-version>
     <dom4j-version>1.6.1</dom4j-version>
     <httpclient-version>4.5.3</httpclient-version>
+    <fastjson-version>1.2.33</fastjson-version>
+    <jetty-version>9.4.6.v20170531</jetty-version>
+    <javaee-version>7.0</javaee-version>
   </properties>
 
   <dependencies>
@@ -19,7 +22,6 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>${junit-version}</version>
-      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>dom4j</groupId>
@@ -31,8 +33,36 @@
       <artifactId>httpclient</artifactId>
       <version>${httpclient-version}</version>
     </dependency>
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>${fastjson-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-api</artifactId>
+      <version>${javaee-version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jetbrains</groupId>
+      <artifactId>annotations</artifactId>
+      <version>13.0</version>
+    </dependency>
   </dependencies>
   <build>
     <finalName>WxUtils</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-maven-plugin</artifactId>
+        <version>${jetty-version}</version>
+      </plugin>
+    </plugins>
   </build>
 </project>

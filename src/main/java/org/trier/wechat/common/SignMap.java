@@ -1,10 +1,10 @@
-package me.trierbo.wechat.common;
+package org.trier.wechat.common;
 
 
-import me.trierbo.wechat.config.WeChatConfig;
-import me.trierbo.wechat.exception.WxException;
-import me.trierbo.wechat.util.MD5Util;
-import me.trierbo.wechat.util.NumericUtil;
+import org.trier.wechat.config.WeChatConfig;
+import org.trier.wechat.exception.WxException;
+import org.trier.wechat.util.MD5Util;
+import org.trier.wechat.util.NumericUtil;
 
 import java.util.Iterator;
 import java.util.Map;

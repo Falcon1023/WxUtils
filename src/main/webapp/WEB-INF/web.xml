@@ -3,5 +3,13 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>Archetype Created Web Application</display-name>
+  <display-name>WeChat Utils</display-name>
+    <servlet>
+        <servlet-name>AuthServlet</servlet-name>
+        <servlet-class>org.trier.servlet.AuthServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AuthServlet</servlet-name>
+        <url-pattern>auth</url-pattern>
+    </servlet-mapping>
 </web-app>

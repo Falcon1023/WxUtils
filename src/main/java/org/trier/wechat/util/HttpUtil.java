@@ -1,4 +1,4 @@
-package me.trierbo.wechat.util;
+package org.trier.wechat.util;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;

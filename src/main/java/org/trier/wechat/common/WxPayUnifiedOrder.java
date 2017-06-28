@@ -1,4 +1,4 @@
-package me.trierbo.wechat.common;
+package org.trier.wechat.common;
 
 /**
  * 微信统一下单对象
