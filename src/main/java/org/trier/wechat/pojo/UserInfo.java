@@ -103,4 +103,19 @@ public class UserInfo {
     public void setErrmsg(String errmsg) {
         this.errmsg = errmsg;
     }
+
+    @Override
+    public String toString() {
+        return "openid: " + openid + "\n" +
+                "nickname: " + nickname + "\n" +
+                "sex: " + sex + "\n" +
+                "province: " + province + "\n" +
+                "city: " + city + "\n" +
+                "country: " + country + "\n" +
+                "headimgurl: " + headimgurl + "\n" +
+                "privlege: " + privilege + "\n" +
+                "unionid: " + unionid + "\n" +
+                "errcode: " + errcode + "\n" +
+                "errmsg: " + errmsg;
+    }
 }

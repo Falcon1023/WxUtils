@@ -3,24 +3,11 @@ package org.trier.wechat.util;
 import java.io.*;
 
 /**
- * 对象序列化写入文件工具类
- * @param <T>
+ * 对象序列化后写入文件的工具类
  */
 
-public class IOUtil<T> {
-    private String filename;
-    private T object;
-
-    public IOUtil(String filename) {
-        this.filename = filename;
-    }
-
-    public IOUtil(String filename, T object) {
-        this.filename = filename;
-        this.object = object;
-    }
-
-    public void writeObject() {
+public class IOUtil {
+    public static <T> void writeObject(String filename,T object) {
         ObjectOutputStream out=null;
         try {
             out=new ObjectOutputStream(new FileOutputStream(filename));
@@ -37,8 +24,9 @@ public class IOUtil<T> {
         }
     }
 
-    public T readObject(){
+    public static <T> T readObject(String filename){
         ObjectInputStream in = null;
+        T object = null;
         try {
             in = new ObjectInputStream(new FileInputStream(filename));
             object = (T) in.readObject();

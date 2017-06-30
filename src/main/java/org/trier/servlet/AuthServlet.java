@@ -22,12 +22,13 @@ public class AuthServlet extends HttpServlet {
             String redirect_uri = "http://"+request.getServerName()
                     +request.getContextPath()
                     +request.getServletPath();
-            String url=UserInfoService.getCode("snsapi_userinfo",redirect_uri);
+            String url=UserInfoService.getCodeUrl("snsapi_userinfo",redirect_uri);
             response.sendRedirect(url);
         }else{
             log(code);
             Token token=UserInfoService.getToken(code);
             log(token.toString());
+            log(UserInfoService.getUserInfo(token.getAccess_token(),token.getOpenid()).toString());
         }
     }
 }
