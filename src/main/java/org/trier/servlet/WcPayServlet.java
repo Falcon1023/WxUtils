@@ -37,7 +37,7 @@ public class WcPayServlet extends HttpServlet {
             unifiedOrder.setOutTradeNo(String.valueOf(System.currentTimeMillis()));
             unifiedOrder.setTotalFee(1);
             unifiedOrder.setSpbillCreateIp(request.getRemoteAddr());
-            unifiedOrder.setNotifyUrl("http://coyote.wpengtao.com/notify");
+            unifiedOrder.setNotifyUrl("http://coyote.wpengtao.com/WxUtils/notify");
             unifiedOrder.setTradeType("JSAPI");
             UnifiedOrderService unifiedOrderService = new UnifiedOrderService(unifiedOrder);
             UnifiedOrderResult unifiedOrderResult = unifiedOrderService.unifiedOrder();
