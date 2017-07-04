@@ -1,0 +1,85 @@
+body {
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+.topbar {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2083c7;
+  font-size: 16px;
+  z-index: 100;
+}
+.topbar a {
+  display: inline-block;
+  font-size: 16px;
+  padding: 8px;
+  color: #fff;
+}
+.order-info {
+  width: 7.1rem;
+  padding: 0.4rem 0.2rem;
+  margin-top: 41px;
+  text-align: center;
+  color: #333333;
+}
+.receiver-txt {
+  display: inline-block;
+  float: left;
+  color: #999999;
+}
+.receiver-name {
+  display: inline-block;
+  float: right;
+  color: #333333;
+}
+.order-id,
+.pay-btn {
+  font-size: 16px;
+}
+.order-price {
+  font-size: 28px;
+}
+.order-price {
+  margin-top: 0.2rem;
+  font-weight: bold;
+}
+.pay {
+  width: 100%;
+  margin-top: 0.4rem;
+  text-align: center;
+}
+.pay-btn {
+  display: inline-block;
+  width: 7.1rem;
+  padding: 10px 0;
+  background-color: #44BE15;
+  border: 1px solid #61B73E;
+  border-radius: 4px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.order-receiver {
+  width: 7.1rem;
+  padding: 0.26rem 0.2rem;
+  background-color: #FFFFFF;
+}
+.clearfloat {
+  zoom: 1;
+}
+.clearfloat:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}

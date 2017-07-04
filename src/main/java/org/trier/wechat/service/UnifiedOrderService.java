@@ -49,6 +49,14 @@ public class UnifiedOrderService {
             e.printStackTrace();
             return null;
         }
+        if(!unifiedOrderResult.checkSign()){
+            try {
+                throw new WxException("订单返回数据签名错误!");
+            } catch (WxException e) {
+                e.printStackTrace();
+                return null;
+            }
+        }
         return unifiedOrderResult;
     }
 }
