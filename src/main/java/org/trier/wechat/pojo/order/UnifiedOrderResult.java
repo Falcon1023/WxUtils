@@ -15,39 +15,52 @@ import java.util.Iterator;
 public class UnifiedOrderResult extends SignMap {
     /**
      * 检查统一订单数据的签名
+     *
      * @return
      */
-    public boolean checkSign(){
-        if(isSignSet())
+    public boolean checkSign() {
+        if (!isSignSet()) {
             try {
                 throw new WxException("统一订单返回数据签名未设置");
             } catch (WxException e) {
+                e.printStackTrace();
                 return false;
             }
-        String sign=makeSign();
-        if(getSign().equals(sign))
+        }
+        String sign = makeSign();
+        if (getSign().equals(sign))
             return true;
-        else
+        else {
             try {
                 throw new WxException("统一订单返回数据签名错误");
             } catch (WxException e) {
+                e.printStackTrace();
                 return false;
             }
+        }
     }
 
-    public boolean fromXml(String xml){
-        if(xml==null||xml.equals(""))
+    /**
+     * 将请求得到xml数据转换成TreeMap对象
+     *
+     * @param xml
+     * @return
+     */
+    public boolean fromXml(String xml) {
+        if (xml == null || xml.equals("")) {
             try {
                 throw new WxException("xml数据异常");
             } catch (WxException e) {
+                e.printStackTrace();
                 return false;
             }
+        }
         try {
-            Document document= DocumentHelper.parseText(xml);
-            Element root=document.getRootElement();
-            for(Iterator it = root.elementIterator(); it.hasNext();){
+            Document document = DocumentHelper.parseText(xml);
+            Element root = document.getRootElement();
+            for (Iterator it = root.elementIterator(); it.hasNext(); ) {
                 Element element = (Element) it.next();
-                put(element.getName(),element.getText());
+                put(element.getName(), element.getText());
             }
         } catch (DocumentException e) {
             e.printStackTrace();

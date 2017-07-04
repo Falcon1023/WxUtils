@@ -7,15 +7,15 @@ import java.io.*;
  */
 
 public class IOUtil {
-    public static <T> void writeObject(String filename,T object) {
-        ObjectOutputStream out=null;
+    public static <T> void writeObject(String filename, T object) {
+        ObjectOutputStream out = null;
         try {
-            out=new ObjectOutputStream(new FileOutputStream(filename));
+            out = new ObjectOutputStream(new FileOutputStream(filename));
             out.writeObject(object);
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            if(out != null)
+            if (out != null)
                 try {
                     out.close();
                 } catch (IOException e) {
@@ -24,7 +24,7 @@ public class IOUtil {
         }
     }
 
-    public static <T> T readObject(String filename){
+    public static <T> T readObject(String filename) {
         ObjectInputStream in = null;
         T object = null;
         try {

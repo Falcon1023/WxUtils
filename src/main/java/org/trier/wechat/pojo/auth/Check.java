@@ -3,7 +3,7 @@ package org.trier.wechat.pojo.auth;
 /**
  * 校验access_token结果
  */
-public class Check{
+public class Check {
     private int errcode;
     private String errmsg;
 

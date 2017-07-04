@@ -7,6 +7,7 @@ import java.security.NoSuchAlgorithmException;
 public class MD5Util {
     /**
      * 获取md5加密后结果
+     *
      * @param message
      * @return
      */

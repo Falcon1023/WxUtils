@@ -81,13 +81,13 @@ public class Token implements Serializable {
 
     @Override
     public String toString() {
-        return "access_token:"+access_token+"\n"
-                +"expires_in:"+expires_in+"\n"
-                +"record_time:"+record_time+"\n"
-                +"refresh_token:"+refresh_token+"\n"
-                +"openid:"+openid+"\n"
-                +"scope:"+scope+"\n"
-                +"errcode:"+errcode+"\n"
-                +"errmsg:"+errmsg;
+        return "access_token:" + access_token + "\n"
+                + "expires_in:" + expires_in + "\n"
+                + "record_time:" + record_time + "\n"
+                + "refresh_token:" + refresh_token + "\n"
+                + "openid:" + openid + "\n"
+                + "scope:" + scope + "\n"
+                + "errcode:" + errcode + "\n"
+                + "errmsg:" + errmsg;
     }
 }
