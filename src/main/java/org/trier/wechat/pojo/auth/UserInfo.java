@@ -1,4 +1,4 @@
-package org.trier.wechat.pojo;
+package org.trier.wechat.pojo.auth;
 
 /**
  * 用户微信基本信息

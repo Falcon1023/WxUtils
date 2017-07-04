@@ -1,4 +1,4 @@
-package org.trier.wechat.pojo;
+package org.trier.wechat.pojo.auth;
 
 /**
  * 校验access_token结果

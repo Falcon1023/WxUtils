@@ -10,6 +10,6 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>AuthServlet</servlet-name>
-        <url-pattern>auth</url-pattern>
+        <url-pattern>/auth</url-pattern>
     </servlet-mapping>
 </web-app>

@@ -1,5 +1,6 @@
-package org.trier.wechat.common;
+package org.trier.wechat.pojo.order;
 
+import org.trier.wechat.common.SignMap;
 import org.trier.wechat.exception.WxException;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;

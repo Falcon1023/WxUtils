@@ -1,4 +1,4 @@
-package org.trier.wechat.pojo;
+package org.trier.wechat.pojo.auth;
 
 import java.io.Serializable;
 

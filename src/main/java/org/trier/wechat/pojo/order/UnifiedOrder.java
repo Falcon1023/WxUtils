@@ -1,9 +1,11 @@
-package org.trier.wechat.common;
+package org.trier.wechat.pojo.order;
+
+import org.trier.wechat.common.SignMap;
 
 /**
  * 微信统一下单对象
  */
-public class WxPayUnifiedOrder extends SignMap {
+public class UnifiedOrder extends SignMap {
     /**
      * 字段名：公众账号ID
      * 必填：是
@@ -319,7 +321,7 @@ public class WxPayUnifiedOrder extends SignMap {
         return get(SPBILL_CREATE_IP);
     }
 
-    public boolean isSpbillCreateIp(){
+    public boolean isSpbillCreateIpSet(){
         return containsKey(SPBILL_CREATE_IP);
     }
 
@@ -379,7 +381,7 @@ public class WxPayUnifiedOrder extends SignMap {
         return get(TRADE_TYPE);
     }
 
-    public boolean isTradeType(){
+    public boolean isTradeTypeSet(){
         return containsKey(TRADE_TYPE);
     }
 
