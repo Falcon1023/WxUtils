@@ -4,12 +4,12 @@ import org.trier.wechat.pojo.auth.Token;
 import org.trier.wechat.pojo.auth.UserInfo;
 import org.trier.wechat.service.AuthService;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 /**
  * 网页授权servlet
@@ -31,9 +31,10 @@ public class AuthServlet extends HttpServlet {
             response.sendRedirect(url);
         } else {
             Token token = AuthService.getToken(code);
-            PrintWriter out = response.getWriter();
             UserInfo userInfo = AuthService.getUserInfo(token.getAccess_token(), token.getOpenid());
-            out.println(userInfo.toString());
+            request.setAttribute("userInfo", userInfo);
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("/jsp/person.jsp");
+            requestDispatcher.forward(request, response);
         }
     }
 }

@@ -1,0 +1,32 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.ttf?t=1498525904713') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shopping-cart:before { content: "\e626"; }
+
+.icon-gouwuche:before { content: "\e653"; }
+
+.icon-dingdan:before { content: "\e783"; }
+
+.icon-zhuye:before { content: "\e603"; }
+
+.icon-jifen:before { content: "\e61c"; }
+
+.icon-zhuye1:before { content: "\e60e"; }
+
+.icon-dizhi:before { content: "\e6ad"; }
+
+.icon-ren:before { content: "\e687"; }
+
+.icon-ren1:before { content: "\e60f"; }
+
+.icon-kong:before { content: "\e7ec"; }
