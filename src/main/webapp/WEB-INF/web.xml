@@ -4,6 +4,18 @@
 
 <web-app>
     <display-name>WeChat Utils</display-name>
+    <filter>
+        <filter-name>CharacterFilter</filter-name>
+        <filter-class>org.trier.Filter.CharacterFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>utf-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>CharacterFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
     <servlet>
         <servlet-name>AuthServlet</servlet-name>
         <servlet-class>org.trier.servlet.AuthServlet</servlet-class>
@@ -12,6 +24,10 @@
         <servlet-name>NotifyServlet</servlet-name>
         <servlet-class>org.trier.servlet.NotifyServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>WcPayServlet</servlet-name>
+        <servlet-class>org.trier.servlet.WcPayServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AuthServlet</servlet-name>
         <url-pattern>/auth</url-pattern>
@@ -19,5 +35,9 @@
     <servlet-mapping>
         <servlet-name>NotifyServlet</servlet-name>
         <url-pattern>/notify</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>WcPayServlet</servlet-name>
+        <url-pattern>/pay</url-pattern>
     </servlet-mapping>
 </web-app>

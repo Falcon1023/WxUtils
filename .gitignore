@@ -21,3 +21,6 @@ out/
 
 # Mac
 .DS_Store
+
+# Java
+src/test/

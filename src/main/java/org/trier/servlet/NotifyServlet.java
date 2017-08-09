@@ -1,5 +1,7 @@
 package org.trier.servlet;
 
+import org.trier.wechat.util.NotifyUtil;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -16,8 +18,8 @@ public class NotifyServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        log("notify");
+        log("SUCCESS");
         PrintWriter out = response.getWriter();
-        out.print(true);
+        out.print(NotifyUtil.setXML("SUCCESS",""));
     }
 }

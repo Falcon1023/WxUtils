@@ -7,3 +7,4 @@
 #### 依赖包
 - dom4j
 - HttpClient
+- fastjson
